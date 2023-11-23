@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgba(223, 223, 223, 0.333);
+  padding-top: 15px;
+  background-color: rgb(146, 145, 145);
+  justify-content: center;
+  overflow: hidden;
+  margin: 0;
+}
+.row {
+  display: flex;
+  width: 600px;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.col-heared {
+  width: 150px;
+  box-shadow: 5px 5px 9px rgb(126, 149, 197);
+  border-radius: 20px;
+  padding: 15px;
+  text-align: center;
+  color: #0e046e;
+}
+.item {
+  width: 150px;
+  height: 66px;
+  border: 1px solid #eee;
+  box-shadow: 5px 5px 9px rgb(85, 65, 65);
+  border-radius: 20px;
+  padding: 20px 0;
+  color: rgb(250, 185, 8);
+  background-color: rgb(250, 245, 175);
+  text-align: center;
+  cursor: grab;
+}
+
+.item:hover {
+  background: #f3fd67;
+  box-shadow: 0 0 5px #f3fd67, 0 0 25px #f3fd67, 0 0 50px #f3fd67,
+    0 0 70px #f3fd67;
+  color: #0e046e;
+}
+.item:active {
+  cursor: grabbing;
+}
+
+.placeholder {
+  width: 150px;
+  height: 66px;
+}
+.start {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+.progress {
+  background: rgb(63, 94, 251);
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(173, 46, 241, 1) 100%
+  );
+}
+.done {
+  background: rgb(167, 144, 149);
+  background: radial-gradient(
+    circle,
+    rgba(167, 144, 149, 1) 0%,
+    rgba(44, 139, 251, 1) 100%
+  );
+}
+.hold {
+  border: 2px solid #0e046e;
+}
+.hide {
+  display: none;
+}
+.hovered {
+  border-top: 2px dashed #0e046e;
+}
